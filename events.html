@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ETERNAL REALM Events">
+  <title>ETERNAL REALM | Events</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigasi utama">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" data-erl-logo src="assets/erl-logo.png" alt="Logo ETERNAL REALM">
+        <span>
+          <strong>ETERNAL REALM</strong>
+          <small>ROBLOX CLAN</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="members.html">Members</a>
+        <a class="active" href="events.html">Events</a>
+        <a href="join.html">Join Clan</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section page-head">
+      <p class="eyebrow">CLAN ACTIVITY</p>
+      <h1>Upcoming Events</h1>
+      <p>Jadwal kegiatan ETERNAL REALM yang ditampilkan dari Array of Objects.</p>
+    </section>
+
+    <section class="section compact">
+      <div class="section-heading">
+        <h2>Event ERL</h2>
+        <button class="btn btn-ghost" id="sortEvents">Urutkan Terdekat</button>
+      </div>
+
+      <div class="event-grid" id="eventGrid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>ETERNAL REALM</strong>
+      <p>Roblox Clan Community.</p>
+    </div>
+    <p>© 2026 ERL • Educational Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

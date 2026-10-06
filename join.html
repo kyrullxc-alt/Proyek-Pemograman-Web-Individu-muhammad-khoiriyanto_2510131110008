@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join ETERNAL REALM Roblox Clan">
+  <title>ETERNAL REALM | Join Clan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigasi utama">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" data-erl-logo src="assets/erl-logo.png" alt="Logo ETERNAL REALM">
+        <span>
+          <strong>ETERNAL REALM</strong>
+          <small>ROBLOX CLAN</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="members.html">Members</a>
+        <a href="events.html">Events</a>
+        <a class="active" href="join.html">Join Clan</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section join-section">
+      <div class="join-info">
+        <p class="eyebrow">BECOME A PART OF ERL</p>
+        <h1>Join ETERNAL REALM</h1>
+        <p>Isi form pendaftaran untuk simulasi proses bergabung ke clan.</p>
+
+        <ul class="check-list">
+          <li>Community aktif</li>
+          <li>Event dan mabar Roblox</li>
+          <li>Form interaktif dengan JavaScript</li>
+        </ul>
+      </div>
+
+      <form class="join-form" id="joinForm" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="username">Username Roblox</label>
+            <input id="username" type="text" minlength="3" maxlength="20" required>
+            <small class="error" id="usernameError"></small>
+          </div>
+
+          <div class="field">
+            <label for="discord">Discord</label>
+            <input id="discord" type="text" required>
+            <small class="error" id="discordError"></small>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="role">Role yang diminati</label>
+          <select id="role" required>
+            <option value="">Pilih role</option>
+            <option>Member</option>
+            <option>Event Team</option>
+            <option>Content Team</option>
+          </select>
+          <small class="error" id="roleError"></small>
+        </div>
+
+        <div class="field">
+          <label for="reason">Alasan ingin bergabung</label>
+          <textarea id="reason" rows="5" maxlength="250" required></textarea>
+          <div class="textarea-meta">
+            <span id="charCount">0</span>/250
+          </div>
+          <small class="error" id="reasonError"></small>
+        </div>
+
+        <label class="checkbox-field">
+          <input id="agree" type="checkbox" required>
+          <span>Saya mengisi data dengan benar.</span>
+        </label>
+
+        <button class="btn btn-primary full" type="submit">Kirim Pendaftaran</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>ETERNAL REALM</strong>
+      <p>Roblox Clan Community.</p>
+    </div>
+    <p>© 2026 ERL • Educational Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
